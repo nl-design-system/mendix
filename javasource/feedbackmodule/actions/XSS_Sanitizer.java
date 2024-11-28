@@ -16,12 +16,15 @@ import com.mendix.webui.CustomJavaAction;
 
 public class XSS_Sanitizer extends CustomJavaAction<java.lang.String>
 {
-	private java.lang.String stringToSanitize;
+	private final java.lang.String stringToSanitize;
 
-	public XSS_Sanitizer(IContext context, java.lang.String stringToSanitize)
+	public XSS_Sanitizer(
+		IContext context,
+		java.lang.String _stringToSanitize
+	)
 	{
 		super(context);
-		this.stringToSanitize = stringToSanitize;
+		this.stringToSanitize = _stringToSanitize;
 	}
 
 	@java.lang.Override

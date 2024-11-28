@@ -14,12 +14,15 @@ import com.mendix.webui.CustomJavaAction;
 
 public class ValidateEmail extends CustomJavaAction<java.lang.Boolean>
 {
-	private java.lang.String EmailAddress;
+	private final java.lang.String EmailAddress;
 
-	public ValidateEmail(IContext context, java.lang.String EmailAddress)
+	public ValidateEmail(
+		IContext context,
+		java.lang.String _emailAddress
+	)
 	{
 		super(context);
-		this.EmailAddress = EmailAddress;
+		this.EmailAddress = _emailAddress;
 	}
 
 	@java.lang.Override

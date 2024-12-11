@@ -1,17 +1,6 @@
 # Ignore secrets
 .env
 
-# Ignore fonts
-theme/web/*.eof
-theme/web/*.ttf
-theme/web/*.woff
-theme/web/*.woff2
-
-# Ignore vendor files
-theme/web/font.css
-theme/web/mendix-nl-design-system-rotterdam-theme.css
-theme/web/theme.css
-
 # Ignore temporary files
 tmp/
 

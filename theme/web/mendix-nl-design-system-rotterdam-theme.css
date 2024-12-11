@@ -23078,7 +23078,7 @@ p {
   opacity: 100%;
 }
 
-:rooty,
+:root,
 ::backdrop {
   --utrecht-textbox-invalid-border-bottom-width: 2px;
   --utrecht-textbox-padding-inline-start: 16px;

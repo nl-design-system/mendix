@@ -20,7 +20,7 @@
     "build:design-tokens": "cp -R node_modules/@gemeente-rotterdam/design-tokens/dist/theme.css theme/web/theme.css",
     "build:font-assets": "cp -R node_modules/@gemeente-rotterdam/font/src/*.woff node_modules/@gemeente-rotterdam/font/src/*.woff2 theme/web/",
     "build:font-css": "cp -R node_modules/@gemeente-rotterdam/font/src/index.scss theme/web/font.css",
-    "build:mendix-css": "cp -R node_modules/@gemeente-rotterdam/mendix-css/dist/mendix-nl-design-system-rotterdam-theme.css theme/web/mendix-nl-design-system-rotterdam-theme.css",
+    "build:mendix-css": "cp -R node_modules/@gemeente-rotterdam/mendix-css/dist/mendix-nl-design-system-theme.css theme/web/mendix-nl-design-system-theme.css",
     "lint-build": "sass theme/web/:tmp/"
   },
   "packageManager": "pnpm@9.15.0"

@@ -1,0 +1,27 @@
+{
+  "name": "@nl-design-system-community/mendix-project",
+  "version": "1.0.0",
+  "description": "",
+  "author": "NL Design System Community",
+  "license": "EUPL-1.2",
+  "devDependencies": {
+    "@gemeente-rotterdam/design-tokens": "1.0.0-alpha.35",
+    "@gemeente-rotterdam/mendix-css": "1.0.0-alpha.3",
+    "npm-run-all": "4.1.5",
+    "rimraf": "6.0.1",
+    "sass": "1.82.0"
+  },
+  "optionalDependencies": {
+    "@gemeente-rotterdam/font": "1.0.0-alpha.1"
+  },
+  "scripts": {
+    "clean": "rimraf themes/web/",
+    "build": "npm-run-all 'build:**'",
+    "build:design-tokens": "cp -R node_modules/@gemeente-rotterdam/design-tokens/dist/theme.css theme/web/theme.css",
+    "build:font-assets": "cp -R node_modules/@gemeente-rotterdam/font/src/*.woff node_modules/@gemeente-rotterdam/font/src/*.woff2 theme/web/",
+    "build:font-css": "cp -R node_modules/@gemeente-rotterdam/font/src/index.scss theme/web/font.css",
+    "build:mendix-css": "cp -R node_modules/@gemeente-rotterdam/mendix-css/dist/mendix-nl-design-system-rotterdam-theme.css theme/web/mendix-nl-design-system-rotterdam-theme.css",
+    "lint-build": "sass theme/web/:tmp/"
+  },
+  "packageManager": "pnpm@9.15.0"
+}

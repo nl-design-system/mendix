@@ -21,5 +21,6 @@ tmp/
 /**/node_modules/
 !/javascriptsource/**/node_modules/
 /nativemobile/builds/
+/theme-cache/
 /vendorlib/temp/
 .DS_Store

@@ -21,5 +21,7 @@
 2. Run the following commands in your terminal:
    ```bash
    export NPM_TOKEN=npm_a1b2c34f...  # Replace with your actual token
+   ```
+   ```
    pnpm run install
    ```

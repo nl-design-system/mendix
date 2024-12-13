@@ -12,8 +12,14 @@
    - Filter for MTS
    - Download version 10.12.10 (MacOS beta or Windows)
 3. Clone the project to your computer
-4. Open Mendix Studio Pro and select the .mpr file to open the project
-5. If prompted to convert the project .........
+   - note that Mendix Studio Pro is called studio Pro so if you cant find it just search studio pro
+4. Open Mendix Studio Pro, select open file and locate the project, select the .mpr file to open the project
+   - If prompted to convert the project click convert and wait, then proceed to start the project as usal, top right side green arrow
+5. when the project is started, click "view app" (top right side) to open the project in the browser
+6. Now login with these credentials :
+
+**Username**: `MxAdmin` <br>
+**Password**: `1`
 
 ## Installing the Optional Font
 

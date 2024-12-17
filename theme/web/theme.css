@@ -3,7 +3,7 @@
  * Generated on Wed, 21 Aug 2024 06:58:18 GMT
  */
 
-.rods-theme, .rods-theme ::backdrop {
+:root, ::backdrop {
   --utrecht-textbox-invalid-border-bottom-width: 2px;
   --utrecht-textbox-padding-inline-start: 16px;
   --utrecht-textbox-padding-inline-end: 16px;

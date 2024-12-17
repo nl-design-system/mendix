@@ -3,6 +3,7 @@
 
 # Ignore temporary files
 tmp/
+theme-cache/web/*
 
 # Mendix defaults:
 /*.launch

@@ -17,10 +17,10 @@
   "scripts": {
     "clean": "rimraf themes/web/",
     "build": "npm-run-all build:**",
-    "build:design-tokens": "cp -R node_modules/@gemeente-rotterdam/design-tokens/dist/theme.css theme/web/theme.css",
-    "build:font-assets": "cp -R node_modules/@gemeente-rotterdam/font/src/*.woff node_modules/@gemeente-rotterdam/font/src/*.woff2 theme/web/",
-    "build:font-css": "cp -R node_modules/@gemeente-rotterdam/font/src/index.scss theme/web/font.css",
-    "build:mendix-css": "cp -R node_modules/@gemeente-rotterdam/mendix-css/dist/mendix-nl-design-system-theme.css theme/web/mendix-nl-design-system-theme.css",
+    "build:design-tokens": "cp -R node_modules/@gemeente-rotterdam/design-tokens/dist/theme.css themesource/rotterdamstyling/web/theme.css",
+    "build:font-assets": "cp -R node_modules/@gemeente-rotterdam/font/src/*.woff node_modules/@gemeente-rotterdam/font/src/*.woff2 themesource/rotterdamstyling/web/",
+    "build:font-css": "cp -R node_modules/@gemeente-rotterdam/font/src/index.scss themesource/rotterdamstyling/web/font.css",
+    "build:mendix-css": "cp -R node_modules/@gemeente-rotterdam/mendix-css/dist/mendix-nl-design-system-theme.css themesource/nldesignsystem/web/mendix-nl-design-system-theme.css",
     "lint-build": "sass theme/web/:tmp/"
   },
   "packageManager": "pnpm@9.15.0"

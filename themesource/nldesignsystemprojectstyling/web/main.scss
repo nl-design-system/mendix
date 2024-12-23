@@ -1,1 +1,66 @@
-@import '../../../theme/web/custom-variables';
+@import "../../../theme/web/custom-variables";
+
+// Tokens
+:root {
+  --nlds-topbar-background-color: #0d1f2a;
+}
+
+body {
+  font-size: 18px;
+}
+
+// Layout
+.nlds-region-sidebar {
+  border-right: 1px solid rgba(0, 0, 0, 0.15); //TODO: CSS Variable
+  background-color: transparent; //TODO: CSS Variable
+  height: 100%;
+
+  .mx-navigationtree {
+    background-color: transparent;
+
+    .navbar-inner > ul > li > a {
+      background-color: transparent; //TODO: CSS Variable
+      color: black; //TODO: CSS Variable
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: rgba(0, 0, 0, 0.15); //TODO: CSS Variable
+        color: black; //TODO: CSS Variable
+      }
+
+      > .caret {
+        border-top-color: black; //TODO: CSS Variable
+        border-bottom-color: black; //TODO: CSS Variable
+      }
+    }
+
+    li.mx-navigationtree-has-items > ul {
+      background-color: transparent; //TODO: CSS Variable
+
+      > li > a {
+        background-color: transparent; //TODO: CSS Variable
+        color: black; //TODO: CSS Variable
+
+        &:hover,
+        &:active,
+        &:focus,
+        &.active {
+          background-color: rgba(0, 0, 0, 0.15); //TODO: CSS Variable
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.nlds-region-topbar {
+  background-color: var(--nlds-topbar-background-color);
+  position: relative;
+  z-index: 60;
+  min-height: 60px;
+}
+
+.nlds-pageheader {
+  padding: 2.4rem 2.4rem 0 2.4rem;
+}

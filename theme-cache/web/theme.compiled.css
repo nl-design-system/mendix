@@ -27763,6 +27763,12 @@ body {
   padding: 2.4rem 2.4rem 0 2.4rem;
 }
 
+.nlds-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 24px;
+}
+
 :root {
   /*
    DISCLAIMER:

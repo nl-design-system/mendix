@@ -1,4 +1,4 @@
-@import "../../../theme/web/custom-variables";
+@import '../../../theme/web/custom-variables';
 
 // Tokens
 :root {
@@ -17,6 +17,16 @@ body {
 
   .mx-navigationtree {
     background-color: transparent;
+
+    .mx-navigationtree-has-items {
+      .caret {
+        display: none;
+      }
+
+      ul {
+        display: block;
+      }
+    }
 
     .navbar-inner > ul > li > a {
       background-color: transparent; //TODO: CSS Variable
@@ -68,10 +78,18 @@ body {
 .nlds-card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 240px);
-  gap: 24px;
+  gap: 24px; //TODO: Spacing variable
 }
 
 .nlds-button-container {
   display: flex;
   gap: 1rem;
+}
+
+.nlds-card {
+  &:hover {
+    .card-title {
+      text-decoration: underline;
+    }
+  }
 }

@@ -27255,6 +27255,12 @@ body {
 .nlds-region-sidebar .mx-navigationtree {
   background-color: transparent;
 }
+.nlds-region-sidebar .mx-navigationtree .mx-navigationtree-has-items .caret {
+  display: none;
+}
+.nlds-region-sidebar .mx-navigationtree .mx-navigationtree-has-items ul {
+  display: block;
+}
 .nlds-region-sidebar .mx-navigationtree .navbar-inner > ul > li > a {
   background-color: transparent;
   color: black;
@@ -27299,6 +27305,10 @@ body {
 .nlds-button-container {
   display: flex;
   gap: 1rem;
+}
+
+.nlds-card:hover .card-title {
+  text-decoration: underline;
 }
 
 :root {

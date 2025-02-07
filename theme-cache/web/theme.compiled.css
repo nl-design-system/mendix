@@ -27298,7 +27298,7 @@ body {
 
 .nlds-card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 240px);
+  grid-template-columns: repeat(auto-fill, 420px);
   gap: 24px;
 }
 
@@ -27307,6 +27307,16 @@ body {
   gap: 1rem;
 }
 
+.nlds-card {
+  border: 1px solid var(--nlds-topbar-background-color);
+  border-radius: 0;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+}
+.nlds-card .card-image {
+  order: 1;
+}
 .nlds-card:hover .card-title {
   text-decoration: underline;
 }

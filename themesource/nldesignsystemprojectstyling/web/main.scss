@@ -77,7 +77,7 @@ body {
 
 .nlds-card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 240px);
+  grid-template-columns: repeat(auto-fill, 420px);
   gap: 24px; //TODO: Spacing variable
 }
 
@@ -87,6 +87,16 @@ body {
 }
 
 .nlds-card {
+  border: 1px solid var(--nlds-topbar-background-color);
+  border-radius: 0;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+
+  .card-image {
+    order: 1;
+  }
+
   &:hover {
     .card-title {
       text-decoration: underline;

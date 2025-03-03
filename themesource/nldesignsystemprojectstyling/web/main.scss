@@ -64,9 +64,15 @@ body {
   }
 }
 
+.main-layout-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
 .nlds-region-topbar {
   background-color: var(--nlds-topbar-background-color);
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 60;
   min-height: 60px;
 }
@@ -101,5 +107,12 @@ body {
     .card-title {
       text-decoration: underline;
     }
+  }
+}
+
+.nlds-navbar {
+  &__title {
+    background-color: transparent !important;
+    font-size: 28px !important;
   }
 }

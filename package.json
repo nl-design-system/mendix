@@ -21,6 +21,11 @@
     "build:font-assets": "cp -R node_modules/@gemeente-rotterdam/font/src/*.woff node_modules/@gemeente-rotterdam/font/src/*.woff2 themesource/rotterdamstyling/web/",
     "build:font-css": "cp -R node_modules/@gemeente-rotterdam/font/src/index.scss themesource/rotterdamstyling/web/font.css",
     "build:mendix-css": "cp -R node_modules/@gemeente-rotterdam/mendix-css/dist/mendix-nl-design-system-theme.css themesource/nldesignsystem/web/mendix-nl-design-system-theme.css",
+    "build-win": "npm-run-all build-win:**",
+    "build-win:design-tokens": "copy node_modules\\@gemeente-rotterdam\\design-tokens\\dist\\theme.css themesource\\rotterdamstyling\\web\\theme.css",
+    "build-win:mendix-css": "copy node_modules\\@gemeente-rotterdam\\mendix-css\\dist\\mendix-nl-design-system-theme.css themesource\\nldesignsystem\\web\\mendix-nl-design-system-theme.css",
+    "build-win:font-assets": "copy node_modules\\@gemeente-rotterdam\\font\\src\\*.woff node_modules\\@gemeente-rotterdam\\font\\src\\*.woff2 themesource\\rotterdamstyling\\web\\",
+    "build-win:font-css": "copy node_modules\\@gemeente-rotterdam\\font\\src\\index.scss themesource\\rotterdamstyling\\web\\font.css",
     "lint-build": "sass theme/web/:tmp/"
   },
   "packageManager": "pnpm@9.15.0"
